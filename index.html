@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for Dog Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Donate for Dog Food</h1>
+    </header>
+    <main>
+        <div class="background-image"></div>
+        <div class="content">
+            <p>Help us make a difference in the lives of our furry friends. Your donation ensures that no dog goes to bed hungry. Every contribution counts, and every wagging tail is a testament to your kindness.</p>
+            <form id="donationForm" action="/your-server-endpoint" method="POST">
+                <label for="amount">Donation Amount (INR):</label>
+                <input type="number" id="amount" name="amount" required placeholder="Enter amount in INR">
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Donate Now</button>
+            </form>
+            <div class="qr-code">
+                <p>Or scan the QR code below to donate:</p>
+                <img src="kartik.png" alt="QR Code" onclick="window.open('path/to/your/qrcode.png', '_blank');">
+            </div>
+        </div>
+    </main>
+    <script>
+        // You can add JavaScript code here for client-side validation or interaction
+    </script>
+</body>
+</html>
